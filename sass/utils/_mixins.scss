@@ -1,0 +1,45 @@
+@mixin align() {
+    display: flex;
+    align-items: center;
+}
+
+@mixin justify($type: center) {
+    display: flex;
+    justify-content: $type;
+    
+}
+
+@mixin flexcenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@mixin generateIcons($iconList) {
+    @each $iconName in $iconList {
+        .icon-#{$iconName}::before {
+            background-image:  url('../images/#{$iconName}.svg');
+        }
+    }
+    
+}
+
+@mixin сentered-xy() { 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin social-link($bgcolor, $color) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $bgcolor;
+    color: $color;
+    transition: color 250ms var(--standart-cubic), background-color 250ms var(--standart-cubic);
+}

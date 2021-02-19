@@ -1,0 +1,28 @@
+.button {
+    min-width: 200px;
+    padding: 10px 15px;
+    display: inline-block;
+    color: var(--main-light-color);
+    background-color: var(--accent-color);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    border: none;
+}
+
+.subscribe__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 12px;
+
+    & .subscribe__icon {
+        fill: currentColor;
+        margin-left: 10px;
+    }
+}
+

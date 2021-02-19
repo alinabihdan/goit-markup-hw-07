@@ -7,25 +7,24 @@
 
 .clients-list {
     display: flex;
+
+    &__icon {
+        fill: currentColor;
+    }
 }
 
-.clients-item {
+.clients-list__item {
     width: 170px;
     height: 90px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
-.clients-item:not(:last-child) {
-    margin-right: 30px;
-}   
-
-.clients-icon {
-    fill: currentColor;
-}
-
-.clients-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.clients-list__link {
+    @include flexcenter();
+    
     height: 100%;
     width: 100%;
     cursor: pointer;
@@ -34,11 +33,10 @@
     
     color: var(--icons-color);
     transition: color 250ms var(--standart-cubic), border-color 250ms var(--standart-cubic);
-}
 
-
-.clients-link:hover,
-.clients-link:focus {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
 }

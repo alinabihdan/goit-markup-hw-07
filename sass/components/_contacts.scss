@@ -1,20 +1,34 @@
 /* header contacts */
 
-.contacts-list {
-    display: flex;
+.contacts__list {
+    @include align();
     margin-left: auto;
 }
 
-.contacts-item + .contacts-item  {
+.contacts__item + .contacts__item  {
     margin-left: 50px;
 }
 
-.contacts-item > .link:hover,
-.contacts-item > .link:focus {
-    color: var(--accent-color);
-}
-
-.icon-contacts {
+.contacts__icon {
     display: inline-block;
     margin-right: 10px;
+    fill: currentColor;
+}
+
+.contacts__link {
+    @include align();
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+    color: var(--primary-text-color);
+    transition: color 250ms var(--standart-cubic);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);  
+    }
 }
