@@ -1,0 +1,124 @@
+.footer {
+    padding: 60px 0;
+    background-color: var(--footer-bg-color);
+}
+
+.logo-bottom {
+    margin-bottom: 20px;
+}
+
+.adress-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.adress-item.light {
+    color: var(--main-light-color);
+}
+
+.adress-item {
+    line-height: 1.71;
+    color: var(--footer-text-color);
+    font-style: normal;
+    transition: color 250ms var(--standart-cubic);
+}
+
+.adress-item:hover,
+.adress-item:focus {
+    color: var(--accent-color);
+}
+
+.footer-box {
+    display: flex;
+    align-items: baseline;
+}
+
+.join-box {
+    margin-left: 70px;
+}
+
+.join__title {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--main-light-color);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.social-link-list {
+    display: flex;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--main-light-color);
+    transition: background-color 250ms var(--standart-cubic);
+}
+
+.social-link-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-link-icon {
+    fill: currentColor;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--accent-color);
+}
+
+.subscribe-box {
+    margin-left: auto;
+}
+.subscribe {
+    display: flex;
+}
+
+.subscribe-title {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--main-light-color);
+}
+
+.subscribe-input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    outline: none;
+
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--accent-bg-color);
+    transition: border-color 250ms var(--standart-cubic);
+}
+
+.subscribe-input:hover,
+.subscribe-input:focus {
+    border-color: var(--accent-color);
+}
+
+.subscribe-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 12px;
+}
+
+.subscribe-icon {
+    margin-left: 10px;
+}
+

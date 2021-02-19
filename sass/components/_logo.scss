@@ -1,0 +1,24 @@
+/* logo */
+.logo {
+    display: inline-block;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo.top {
+    padding: 24px 0;
+}
+
+.logo .web {
+    color: var(--accent-color);
+}
+
+.logo .studio {
+    color: var(--black-color);
+}
+
+.logo .footer-studio {
+    color: var(--main-light-color)
+}
